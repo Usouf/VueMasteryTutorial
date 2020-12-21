@@ -23,7 +23,8 @@ export default {
   created() {
     EventService.getEvents()
       .then(response => {
-        this.events = response.data.results
+        console.log(response);
+        this.events = response.data
       })
       .catch(error => {
         console.log(error)
