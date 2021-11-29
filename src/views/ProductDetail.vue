@@ -11,6 +11,7 @@
 import { mapState, mapGetters } from 'vuex'
 
 export default {
+  name: 'Detail',
   props: ['id'],
   created() {
     this.$store.dispatch('product/getProduct', this.id)

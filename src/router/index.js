@@ -14,6 +14,7 @@ const routes = [
     name: 'ProductDetail',
     component: ProductDetail,
     props: true
+    // props: (route) => ({ showExtra // is in the component props //: route.query.e // e is in the url // })
   },
   {
     path: '/create',
